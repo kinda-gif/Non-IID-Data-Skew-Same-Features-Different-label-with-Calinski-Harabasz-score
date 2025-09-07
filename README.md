@@ -1,3 +1,5 @@
+# SFDL Cluster Library
+
 ## Overview
 
 SFDL Cluster is a Python library designed to assist in federated learning experiments by providing tools for data clustering and distribution under the "Same Features, Different Label" (SFDL) data skew. This type of non-IID data distribution is common in real-world federated scenarios, where clients might have similar feature sets but different label distributions due to local variations or specific tasks. The library leverages KMeans clustering with an optimal `k` selection strategy based on the Calinski-Harabasz score to identify natural groupings within the data, and then distributes these clusters to simulate SFDL skew across different clients.
